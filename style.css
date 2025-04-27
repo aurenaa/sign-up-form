@@ -26,7 +26,7 @@ body {
     position: absolute;
     bottom: 10px;
     width: 100%;
-    color: grey;
+    color: rgb(211, 211, 211);
 }
 
 .site-info {
@@ -69,7 +69,7 @@ body {
 
 .header {
     height: 80px;
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(245, 245, 245);
     padding: 90px 50px;
     font-weight: bold;
     font-size: 18px;
@@ -78,13 +78,16 @@ body {
 .forms form {
     display: flex;
     gap: 50px;
-    padding: 50px 50px;
+    padding: 40px 50px;
+    box-shadow: 2px 1px 3px rgb(109, 109, 109);
+    font-size: 14px;
 }
 
 .left, .right {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .footer {
@@ -92,8 +95,8 @@ body {
 }
 
 button {
-    background-color: pink;
-    border: 1px pink solid;
+    background-color: #fd4c46;
+    border: 1px #fd4c46 solid;
     border-radius: 5px;
     width: 160px;
     height: 40px;
@@ -101,4 +104,28 @@ button {
     color: white;   
     text-shadow: 1px 1px 2px black;
     box-shadow: 2px 1px 3px rgb(109, 109, 109);
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.log-in {
+    cursor: pointer;
+    color: #fd4c46;
+}
+
+input {
+    border-radius: 3px;
+    border: 1px solid;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(3, 129, 188);
+    box-shadow: 2px 1px 3px rgb(99, 124, 135);
+}
+
+input[type="password"]:invalid {
+    outline: none;
+    border: 1px solid red;
+    box-shadow: 2px 1px 3px rgb(99, 124, 135);
 }
