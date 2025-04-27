@@ -6,13 +6,13 @@ body {
 .container {
     display: flex;
     height: 100vh;
-    color: white;
 }
 
 .left-side {
     overflow: hidden;
     position: relative;
     text-align: center;
+    color: white;
 }
 
 .background {
@@ -59,4 +59,46 @@ body {
     width: 90px;
     height: 90px;
     z-index: 2;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.header {
+    height: 80px;
+    background-color: rgb(204, 204, 204);
+    padding: 90px 50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.forms form {
+    display: flex;
+    gap: 50px;
+    padding: 50px 50px;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer {
+    margin-left: 50px;
+}
+
+button {
+    background-color: pink;
+    border: 1px pink solid;
+    border-radius: 5px;
+    width: 160px;
+    height: 40px;
+    font-weight: bold;
+    color: white;   
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 2px 1px 3px rgb(109, 109, 109);
 }
